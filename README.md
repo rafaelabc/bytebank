@@ -1,27 +1,72 @@
-# Bytebank
+<h1 align="center">
+    Bytebank
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
-## Development server
+## Sobre o projeto
+Bytebank - É um sistema básico que simula transferências bancárias
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Os usuários encontrarão as seguintes funcionalidades:
+- Fazer transferência
+- Visualizar transferências
 
-## Code scaffolding
+Projeto desenvolvido para estudar e aprender Angular
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Layout
 
-## Build
+<p style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="bytebank" title="#bytebank" src="./assets/extrato.png" > 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+  <img alt="bytebank" title="#bytebank" src="./assets/novo.png">
 
-## Running unit tests
+</p>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Tecnologias
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+As seguintes ferramentas foram usadas na construção do projeto:
 
-## Further help
+- [Angular][angular]
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Como executar o projeto
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js][nodejs].
+Além disto é bom ter um editor para trabalhar com o código como [VSCode][vscode]
+
+### Rodando a aplicação web (Front End)
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/rafaelabc/bytebank
+
+# Instale as dependências
+$ npm install
+
+# Inicie a aplicação
+$ ng s -o
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+```
+### Rodando json-server 
+
+```bash
+$ cd dados
+# Instale as dependências
+$ json-server --watch db.json
+
+# Inicie a aplicação
+$ ng s -o
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+```
+Feito por Rafaela Custódio [Entre em contato!](https://www.linkedin.com/in/rafaela-custodio/)
+
+[nodejs]: https://nodejs.org/
+[angular]: https://angular.io/
+[vscode]: https://code.visualstudio.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[license]: https://opensource.org/licenses/MIT
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
