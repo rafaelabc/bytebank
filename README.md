@@ -53,14 +53,13 @@ $ ng s -o
 ### Rodando json-server 
 
 ```bash
+
+# Acesse a pasta do "banco de dados" em json
 $ cd dados
-# Instale as dependências
+
+# Inicie json-server
 $ json-server --watch db.json
 
-# Inicie a aplicação
-$ ng s -o
-
-# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 ```
 Feito por Rafaela Custódio [Entre em contato!](https://www.linkedin.com/in/rafaela-custodio/)
 
